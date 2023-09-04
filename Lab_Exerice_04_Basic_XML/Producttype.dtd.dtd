@@ -1,0 +1,23 @@
+<!ELEMENT products (product+)>
+<!ELEMENT product (productID, productName, price, quantity, category)>
+<!ELEMENT productID (#PCDATA)>
+<!ELEMENT productName (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT quantity (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+
+<!-- Define attributes for restrictions -->
+<!ATTLIST productName
+    minLength CDATA #REQUIRED
+    maxLength CDATA #REQUIRED>
+    
+<!ATTLIST price
+    minInclusive CDATA #REQUIRED
+    maxInclusive CDATA #REQUIRED>
+    
+<!ATTLIST quantity
+    minInclusive CDATA #REQUIRED
+    maxInclusive CDATA #REQUIRED>
+    
+<!ATTLIST category
+    enumeration (Electronics | Clothing | Books) #REQUIRED>
