@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jokes</title>
+</head>
+<body>
+  <h1>Jokes</h1>
+  <ul id="jokes-list"></ul>
+
+  <script>
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'jokes.json');
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        const jokes = JSON.parse(xhr.responseText).jokes;
+        const jokesList = document.getElementById('jokes-list');
+        jokes.forEach(function(joke) {
+          const li = document.createElement('li');
+          li.textContent = joke.category + ': ' + joke.text;
+          jokesList.appendChild(li);
+        });
+      }
+    };
+    xhr.send();
+  </script>
+</body>
+</html>
