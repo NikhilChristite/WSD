@@ -1,0 +1,298 @@
+        
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color:#007BFF;
+    color: #fff;
+    padding: 6px ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    flex: 1; /* This will make the logo take up all available space on the left */
+    margin-right: 300px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.log-bar {
+    display: flex;
+    align-items: center;
+}
+
+.log-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.log-bar button {
+    background-color:#005792;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
+ul.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+ul.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+ul.nav-links li a:hover {
+    color: #ff6600;
+}
+
+
+
+
+
+
+.article-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+}
+
+.read-more {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+
+
+article.author {
+    background-color: #f1f1f1;
+    color:#10316b;
+    padding: 10px;
+    text-align: center;
+}
+
+article.content {
+    background-color: #f1f1f1;
+    color:#6643b5;
+    padding: 30px ;
+    margin: 20px 0;
+}
+
+#comments {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    background-color:#f1f1f1;
+}
+
+#comment-form label,
+#comment-list {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#comment-list {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+.sidebar {
+    width: 30%;
+    margin-left: 30px;
+}
+
+.widget {
+    background-color: #f0d9da;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.widget h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+
+
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.widget {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button[type="submit"] {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff9933;
+}
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 250px;
+}
+
+.subscribe-form button {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-info {
+    text-align: right;
+    font-size: 14px;
+    margin-top: 10px;
+}
+

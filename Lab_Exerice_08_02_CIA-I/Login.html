@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Login or Register</title>
+
+    <style>
+        
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color:#007BFF;
+    color: #fff;
+    padding: 6px ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    flex: 1; /* This will make the logo take up all available space on the left */
+    margin-right: 300px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.log-bar {
+    display: flex;
+    align-items: center;
+}
+
+.log-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.log-bar button {
+    background-color:#005792;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
+ul.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+ul.nav-links li a:hover {
+    color: #ff6600;
+}
+
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tabs span {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+
+.tabs span.active {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.login-register-form {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form h2 {
+    margin: 0 0 20px;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #ff9933;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./Education_03.webp" alt="Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Profile.html">Profile</a></li>
+                <li><a href="#">About</a></li>
+               
+            </ul>
+            <div class="log-bar">
+               
+                <a href="./Login.html"><button>Login/Register</button></a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        
+            <form id="login-form" class="form">
+                <h2>Login</h2>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <form id="register-form" class="form">
+                <h2>Register</h2>
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

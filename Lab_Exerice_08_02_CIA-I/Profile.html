@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>User Profile</title>
+
+    <style>
+        
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color:#007BFF;
+    color: #fff;
+    padding: 6px ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    flex: 1; /* This will make the logo take up all available space on the left */
+    margin-right: 300px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.log-bar {
+    display: flex;
+    align-items: center;
+}
+
+.log-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.log-bar button {
+    background-color:#005792;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
+ul.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+ul.nav-links li a:hover {
+    color: #ff6600;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.user-profile {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.username {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.bio {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.contributions {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.article-list {
+    list-style: none;
+    padding: 0;
+}
+
+.article-list li {
+    margin: 10px 0;
+}
+
+.article-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.article-list a:hover {
+    color: #ff6600;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./Education_03.webp" alt="Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Profile.html">Profile</a></li>
+                <li><a href="#">About</a></li>
+               
+            </ul>
+            <div class="log-bar">
+               
+                <a href="./Login.html"><button>Login/Register</button></a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="user-profile">
+            <img class="avatar" src="./User_avtar.jpeg" alt="User Avatar">
+            <h2 class="username">JohnDoe123</h2>
+            <p class="bio">Passionate about education and learning. Here to share knowledge and learn from others.</p>
+            <h3 class="contributions">Contributions:</h3>
+            <ul class="article-list">
+                <li><a href="#">Article 1 - Introduction to Physics</a></li>
+                <li><a href="#">Article 2 - History of Mathematics</a></li>
+                <li><a href="#">Article 3 - Tips for Effective Study</a></li>
+                <!-- Add more contributed articles as needed -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
